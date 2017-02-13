@@ -12,9 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('X-HTTP-Method-Override')); 
 app.use(express.static(__dirname + '/public')); 
 
-
-
-
 const port = 8080;
 app.listen(port);
 console.log('Magic happens on port ' + port);
