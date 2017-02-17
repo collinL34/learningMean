@@ -4,7 +4,8 @@ angular.module('NerdRoutes', ['$urlProvider', '$locationProvider'])
             .when('/', {
                 templateUrl: 'views/home.html',
                 controller: 'HomeCtrl'
-            }),
+            })
+            
             .when('/nerds', {
                 templateUrl: 'views/nerds.html',
                 controller: 'NerdsCtrl'

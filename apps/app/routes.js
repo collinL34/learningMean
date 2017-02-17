@@ -8,7 +8,8 @@ module.exports = function(app) {
         });
     });
 
-    app.get('*', function(res, req) {
-        res.sendFile('../public/index.html');
-    })
+    app.get('*', function(req, res) {
+        res.sendfile('./public/views/index.html'); // load our public/index.html file
+    });
+
 }
