@@ -1,14 +1,20 @@
-angular.module('NerdRoutes', ['$urlProvider', '$locationProvider'])
-    .config('Routes', function($urlProvider, $locationProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/home.html',
-                controller: 'HomeCtrl'
-            })
-            
-            .when('/nerds', {
-                templateUrl: 'views/nerds.html',
-                controller: 'NerdsCtrl'
-            })
-        $locationProvider.html5Mode(true);
+// public/js/appRoutes.js
+angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
+    $routeProvider
+
+    // home page
+        .when('/', {
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl'
     })
+
+    // nerds page that will use the NerdController
+    .when('/nerds', {
+        templateUrl: 'views/nerd.html',
+        controller: 'NerdsCtrl'
+    });
+
+    $locationProvider.html5Mode(true);
+
+}]);
