@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.listen(port);
 
-console.log('Magic happens on PORT' + port);
+console.log('Magic happens on PORT ' + port);
 
 require('./app/routes.js')(app);
 
