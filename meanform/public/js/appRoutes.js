@@ -6,7 +6,7 @@ angular.module('formRoutes', ['ui.router'])
         .state('form', {
             url: '/form',
             templateUrl: 'views/form.html',
-            controller: 'formController'
+            controller: 'HomeCtrl'
         })
 
         .state('form.profile', {
