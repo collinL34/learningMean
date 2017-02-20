@@ -3,34 +3,26 @@ angular.module('formRoutes', ['ui.router'])
 
         $stateProvider
 
-        // route to show our basic form (/form)
-            .state('form', {
+        .state('form', {
             url: '/form',
-            templateUrl: 'form.html',
+            templateUrl: 'views/form.html',
             controller: 'formController'
         })
 
-        // nested states 
-        // each of these sections will have their own view
-        // url will be nested (/form/profile)
         .state('form.profile', {
             url: '/profile',
-            templateUrl: 'form-profile.html'
+            templateUrl: 'views/form-profile.html'
         })
 
-        // url will be /form/interests
         .state('form.interests', {
             url: '/interests',
-            templateUrl: 'form-interests.html'
+            templateUrl: 'views/form-interests.html'
         })
 
-        // url will be /form/payment
         .state('form.payment', {
             url: '/payment',
-            templateUrl: 'form-payment.html'
+            templateUrl: 'views/form-payment.html'
         });
 
-        // catch all route
-        // send users to the form page 
         $urlRouterProvider.otherwise('/form/profile');
     })
