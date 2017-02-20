@@ -9,15 +9,15 @@
     <script type="text/javascript" src='libs/angular-ui-router/release/angular-ui-router.min.js'></script>
     <script type="text/javascript" src='libs/angular-animate/angular-animate.min.js'></script>
     
+    <script type="text/javascript" src='js/controllers/HomeCtrl.js'></script>
     <script type="text/javascript" src='js/appRoutes.js'></script>
     <script type="text/javascript" src='js/app.js'></script>
-    <script type="text/javascript" src='js/controllers/HomeCtrl.js'></script>
 
 </head>
 
 <body ng-app="formApp" ng-controller="HomeCtrl">
 
-    <button ng-click="processForm"> click </button>
+    <button ng-click="processForm()"> click </button>
 
     <div ng-view></div>
 
