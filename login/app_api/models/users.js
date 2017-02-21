@@ -1,3 +1,5 @@
+const crypto = require('crypto');
+
 const userSchema = new mongoose.Schema({
     email: {
         type: String,

@@ -13,13 +13,11 @@ require('./app_api/models/db');
 // [SH] Bring in the Passport config after model is defined
 require('./app_api/config/passport');
 
-
 // [SH] Bring in the routes for the API (delete the default routes)
 const routesApi = require('./app_api/routes/index');
 
-
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './public/views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
