@@ -1,4 +1,4 @@
-(function(){
-  angular
-    .module('myApp', ['ui.router', 'Devise', 'templates'])
+(function() {
+    angular
+        .module('myApp', ['ui.router', 'Devise', 'templates'])
 }())

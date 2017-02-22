@@ -11,4 +11,3 @@ require('./app_api/config/passport');
 
 app.use(passport.initialize());
 app.use('/api', routesApi);
-
